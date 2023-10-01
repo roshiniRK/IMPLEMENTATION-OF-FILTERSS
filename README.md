@@ -129,21 +129,15 @@ plt.show()
 ```
 ii) Using Laplacian Operator
 ```
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-image1=cv2.imread("rose.jpg")
-image2=cv2.cvtColor(image1,cv2.COLOR_BGR2RGB)
-kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
-image3=cv2.filter2D(image2,-1,kernel2)
+laplacian=cv2.Laplacian(image2,cv2.CV_64F)
 plt.figure(figsize=(9,9))
 plt.subplot(1,2,1)
 plt.imshow(image2)
 plt.title("Original Image")
 plt.axis("off")
 plt.subplot(1,2,2)
-plt.imshow(image3)
-plt.title("Laplacian Kernel")
+plt.imshow(laplacian)
+plt.title("Laplacian Operator")
 plt.axis("off")
 plt.show()
 ```
@@ -174,7 +168,8 @@ i) Using Laplacian Kernal
 
 
 ii) Using Laplacian Operator
-![image](https://github.com/roshiniRK/IMPLEMENTATION-OF-FILTERSS/assets/118956165/baeb8191-fe09-43b4-99c8-a3cb1b9d8e43)
+![image](https://github.com/roshiniRK/IMPLEMENTATION-OF-FILTERSS/assets/118956165/45752897-aa67-47b2-8491-f61218838ce5)
+
 
 
 ## Result:
